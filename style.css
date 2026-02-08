@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background: #0a0f1f;
+    color: #00eaff;
+    overflow: hidden;
+}
+
+/* effet speed flash */
+.bg-speed {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 40px,
+        rgba(0,234,255,0.05) 40px,
+        rgba(0,234,255,0.05) 45px
+    );
+    animation: move 0.5s linear infinite;
+}
+
+@keyframes move {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50px); }
+}
+
+.container {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.title {
+    font-size: 32px;
+    text-shadow: 0 0 15px #00eaff;
+    letter-spacing: 3px;
+}
+
+.search-box input {
+    padding: 12px;
+    background: #111;
+    border: 1px solid #00eaff;
+    color: white;
+    width: 200px;
+}
+
+.search-box button {
+    padding: 12px;
+    background: #00eaff;
+    border: none;
+    font-weight: bold;
+}
+
+.card {
+    margin: 15px auto;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #00eaff;
+    box-shadow: 0 0 10px #00eaff;
+    background: #111;
+}
+
+.back {
+    color: #00eaff;
+    text-decoration: none;
+}
